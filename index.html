@@ -19,6 +19,36 @@
             line-height: 1.5;
         }
 
+        /* POC Ribbon Banner */
+        .poc-ribbon {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            z-index: 10001;
+            pointer-events: none;
+        }
+
+        .poc-ribbon span {
+            position: absolute;
+            display: block;
+            width: 150px;
+            padding: 5px 0;
+            background: #e53935;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            left: -40px;
+            top: 20px;
+            transform: rotate(-45deg);
+        }
+
         /* ========== GLOBAL HEADER ========== */
         .global-header {
             background: #032d60;
@@ -815,6 +845,9 @@
     </style>
 </head>
 <body>
+    <!-- POC Ribbon Banner -->
+    <div class="poc-ribbon"><span>POC</span></div>
+
     <!-- Global Header -->
     <header class="global-header">
         <div class="header-left">
